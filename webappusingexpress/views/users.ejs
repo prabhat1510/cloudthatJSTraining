@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <%= data.title %>
+        </title>
+    </head>
+    <body>
+        <h1><%= data.message %></h1>
+        <!-- <p><%= data.users %></p> -->
+         <ul>
+            <%for(let i=0;i<data.users.length;i++){%>
+                <%for(let j=0;j<data.users[i].length;j++){%>
+                        <li>
+                         <%= data.users[i][j].userid %>   
+                         <%= data.users[i][j].username %>
+                         <%= data.users[i][j].email %>
+                        </li>
+                <%}%> 
+            <%}%>
+         </ul>
+    </body>
+</html>

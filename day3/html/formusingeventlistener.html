@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="../js/formusingevenlistener.js"></script>
+</head>
+
+<body>
+    <h1>HTML Form Validation</h1>
+   <form>
+    <label>Enter the name </label>
+        <input id="ipName" type="text" placeholder="Enter name"/><br>
+        <p id="errMsg1" style="color:red"></p>
+        <label>Enter the number </label> 
+        <input id="ipNumber" type="text" placeholder="Enter mobile number"/>
+        <p id="errMsg2" style="color:red"></p>
+        <input type="button" onclick="getFormData()" value="validate" />
+    </form>
+ 
+</body>
+</html>
